@@ -29,5 +29,7 @@ for i in tqdm (range(len(source_files)), desc="Sorting..."):
             shutil.move(os.path.join(source, file), os.path.join(destinations[2], file))
         elif file.endswith(".zip"):
             shutil.move(os.path.join(source, file), os.path.join(destinations[3], file))
+        elif file.endswith(".txt"):
+            shutil.move(os.path.join(source, file), os.path.join(destinations[4], file))
     
 print("Files sorted!")
