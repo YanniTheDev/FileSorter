@@ -1,5 +1,3 @@
-/destinationpath.txt
-
-/sourcepath.txt
+*.txt
 
 .venv
