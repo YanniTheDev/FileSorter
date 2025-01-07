@@ -33,5 +33,7 @@ for i in tqdm (range(len(source_files)), desc="Sorting..."):
             shutil.move(os.path.join(source, file), os.path.join(destinations[4], file))
         elif file.endswith(".mp4"):
             shutil.move(os.path.join(source, file), os.path.join(destinations[5], file))
+        elif file.endswith(".png"):
+            shutil.move(os.path.join(source, file), os.path.join(destinations[6], file))
     
 print("Files sorted!")
