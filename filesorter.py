@@ -13,3 +13,8 @@ with open("destinationpath.txt") as destination_path:
 
 # Separating the destinations into each individual destination
 destinations = destinations.split(",")
+
+# Moving files
+for file in source_destination:
+    if file.endswith(".pdf"):
+        shutil.move(os.path.join(source, file), os.path.join(destinations[0], file))

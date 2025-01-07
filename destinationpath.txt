@@ -1,1 +1,1 @@
-D:\RandomPDFs\,D:\Installers\
+D:\RandomPDFs,D:\Installers,D:\MP3Files,D:\ZIPFiles
