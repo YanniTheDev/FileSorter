@@ -12,9 +12,4 @@ with open("destinationpath.txt") as destination_path:
     destinations = destination_path.readline()
 
 # Separating the destinations into each individual destination
-destination_array = []
-
-for i in destinations:
-    if i == ",":
-        break
-    else
+destinations = destinations.split(",")
