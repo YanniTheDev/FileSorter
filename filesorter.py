@@ -18,3 +18,9 @@ destinations = destinations.split(",")
 for file in source_destination:
     if file.endswith(".pdf"):
         shutil.move(os.path.join(source, file), os.path.join(destinations[0], file))
+    elif file.endswith(".exe") or file.endswith(".msi"):
+        shutil.move(os.path.join(source, file), os.path.join(destinations[1], file))
+    elif file.endswith(".mp3"):
+        shutil.move(os.path.join(source, file), os.path.join(destinations[2], file))
+    elif file.endswith(".zip"):
+        shutil.move(os.path.join(source, file), os.path.join(destinations[3], file))
